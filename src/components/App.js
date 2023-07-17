@@ -3,7 +3,7 @@ import Contact from './Contact';
 import { useEffect, useState } from "react";
 
 function App() {
-
+  //contact list 
   let [clist, setclist] = useState([]);
 
   let[newcontactname,setnewcontactname]=useState('');
@@ -21,7 +21,7 @@ function App() {
     }
     
   }
-
+  //delete function
   async function deletecon(e){
     console.log(e.target.name);
 
@@ -39,7 +39,7 @@ function App() {
       setclist(nl);
     }
   }
-
+  //add new contact
   async function addnc(){
     let nc={name:newcontactname, phone:newcontactnum};
     
@@ -63,7 +63,7 @@ function App() {
     
     
   }
-
+  //udate new contact
   async function update(e){
     console.log(e.target.name);
     console.log(newcontactname,newcontactnum);

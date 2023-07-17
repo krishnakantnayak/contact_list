@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import def_pp from './images/download.png';
-
+//contact component
 function Contact(props){
 
     let[editable,seteditable]=useState(false);
-    
-
+    //function to keep inut fields visible or invisible
     function edit(e){
         seteditable(true);
     }
+
+    //function to update parent component state
     function update(e){
         props.update(e);
         seteditable(false);

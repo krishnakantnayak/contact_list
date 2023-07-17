@@ -13,6 +13,7 @@ code {
     monospace;
 }
 
+/* contact card */
 .contact{
   border: 2px solid black;
   display: flex;
@@ -21,10 +22,12 @@ code {
   width: 30%;
   margin: 10px 10% 2px;
 }
+/* default profile pic image */
 img{
   margin-left: none;
 }
 
+/* input form for new contact */
 .add-box{
   display: flex;
   justify-content: start;
@@ -32,7 +35,7 @@ img{
   width: 30%;
   margin: 10px 10% 2px;
 }
-
+/* class tat makes invisible and gets toggled when required */
 .forcehide{
   display: none;
 }
